@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="card">
+                <div class="product">
+                    <img src="assets/img/notebook.png" alt="laptop gamer">
+                    <p>Laptop Gamer AMD</p>
+                </div>
+                <div class="info">
+                    <input id="cantidad" type="number" placeholder="Cantidad"><br>
+                    <input class="color" type="text" placeholder="Color">
+                </div>
+                <p id="precio">Precio: 400000</p>
+                <div class="boton"><button onclick="
+                    precioreal=400000;final=document.querySelector('#total')
+                    quantity=document.querySelector('#cantidad')
+                    final.innerHTML='Total: $ '+precioreal*quantity.value
+                    cantidadfinal=document.querySelector('#cantidadfinal')
+                    cantidadfinal.innerHTML='Cantidad :'+ cantidad.value
+                    
+                    colorelegido=document.querySelector('.color')
+                    circulo.style.backgroundColor=colorelegido.value
+                    ">Calcular total</button></div>
+            </div>
+            <div class="data">
+
+                <ul>
+                    <li id="total">Total: $0</li>
+                    <li id="cantidadfinal">Cantidad: 0</li>
+                    <li id="color">Color:
+                        <div id="circulo"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+</html>
